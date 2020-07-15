@@ -24,7 +24,7 @@
                 <i class="fa fa-bars"></i>
                 <i class="fa fa-close"></i>
             </div>
-            <a href="Index.html" class="logo">
+            <a href="index.html" class="logo">
                 <!-- <i class="icon ion-md-restaurant"></i>> -->
                 <img src="bookdoclogo.png" alt="Bookdoc logo">
             </a>
@@ -77,7 +77,12 @@
         </nav>
     </div>
 </header>
-
+<script>
+  const selectElement = (element) => document.querySelector(element);
+  selectElement('.menu-icons').addEventListener('click', ()=> {
+    selectElement('nav').classList.toggle('active');
+  })
+</script>
 <!--End nav-->
 
 <!--Start of Main Content-->
